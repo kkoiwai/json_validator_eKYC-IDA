@@ -5,6 +5,9 @@ This is a test script to test [json schema](https://openid.net/schemas/verified_
 It creates package zip file to be uploaded to AWS Lambda and run.
 
 ## How to use
+
+### Docker way
+
 - build docker image to build AWS package (using [LambCI](https://hub.docker.com/r/lambci/lambda/) )
   - `docker build -t json_validator .`
 - run docker image to locally install `jsonschema`
@@ -12,6 +15,15 @@ It creates package zip file to be uploaded to AWS Lambda and run.
 - run (another) docker image to run the validation script
   - `docker run -v "$PWD":/var/task lambci/lambda:python3.6 lambda_function.lambda_handler`
   
+### Simply running jsonschema on terminal
+
+ `pip install jsonschema`
+ 
+ `jsonschema -i eKYC-IDA-5.1.c_too_short.json verified_claims_request-09.json`
+ 
+ `jsonschema -i eKYC-IDA-5.1.c_too_long.json verified_claims_request-09.json`
+ 
+ `jsonschema -i eKYC-IDA-5.1.c_wrong_essencial_type.json verified_claims_request-09.json`
   
 ## Issues with schema
 
