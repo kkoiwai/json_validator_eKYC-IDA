@@ -46,12 +46,20 @@ It creates package zip file to be uploaded to AWS Lambda and run.
             },
 ```
 
-- I tried another variation, but did not work either.
+- I tried other variations, but did not work either.
 
 ```
             "purpose": {
               "type": "string",
               "pattern": "^.{3,300}$"
+            }
+```
+
+```
+            "purpose": {
+              "type": "string" ,
+              "minLength": 3 ,
+              "maxLength": 300
             }
 ```
 
