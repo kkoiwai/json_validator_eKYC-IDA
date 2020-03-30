@@ -1,0 +1,21 @@
+{
+   "userinfo":{
+      "verified_claims":{
+         "verification": {
+            "trust_framework": null
+         },
+         "claims":{
+            "given_name":{
+               "essential":1,
+               "purpose":"132"
+            },
+            "family_name":{
+               "essential":"yes"
+            },
+            "birthdate":{
+               "purpose":"To send you best wishes on your birthday"
+            }
+         }
+      }
+   }
+}

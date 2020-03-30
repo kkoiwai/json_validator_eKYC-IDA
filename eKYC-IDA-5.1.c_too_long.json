@@ -1,0 +1,21 @@
+{
+   "userinfo":{
+      "verified_claims":{
+         "verification": {
+            "trust_framework": null
+         },
+         "claims":{
+            "given_name":{
+               "essential":true,
+               "purpose":"1234"
+            },
+            "family_name":{
+               "essential":true
+            },
+            "birthdate":{
+               "purpose":"To send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthdayTo send you best wishes on your birthday"
+            }
+         }
+      }
+   }
+}
