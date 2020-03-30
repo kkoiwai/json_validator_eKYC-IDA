@@ -5,8 +5,8 @@ This is a test script to test [json schema](https://openid.net/schemas/verified_
 It creates package zip file to be uploaded to AWS Lambda and run.
 
 ## How to use
-- build docker image
-  - `build -t json_validator .`
+- build docker image to build AWS package (using [LambCI](https://hub.docker.com/r/lambci/lambda/) )
+  - `docker build -t json_validator .`
 - run docker image to locally install `jsonschema`
   - `docker run -v "$PWD":/var/task json_validator`
 - run (another) docker image to run the validation script
