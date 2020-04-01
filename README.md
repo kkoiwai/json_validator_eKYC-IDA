@@ -12,7 +12,8 @@ It creates package zip file to be uploaded to AWS Lambda and run.
   - `docker build -t json_validator .`
 - run docker image to locally install `jsonschema`
   - `docker run -v "$PWD":/var/task json_validator`
-- run (another) docker image to run the validation script
+- now you have `deploy_package.zip` which you can upload to AWS Lambda and run.
+- OR, run (another) docker image to run the validation script locally
   - `docker run -v "$PWD":/var/task lambci/lambda:python3.6 lambda_function.lambda_handler`
   
 ### Simply running jsonschema on terminal
