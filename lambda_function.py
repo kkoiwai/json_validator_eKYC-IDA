@@ -32,9 +32,9 @@ def lambda_handler(event, context):
             validate(json_data, json_schema)
         except ValidationError as e:
             print(e.message)
-            print("xxxxxxxxxxxxxxxx"+item+" is INVALID")
+            print("xxxxxxxxxxxxxxxx  "+item+" is INVALID")
         else:
-            print(">>>>>>>>>>>>>>>>"+item+" is valid")
+            print(">>>>>>>>>>>>>>>>  "+item+" is valid")
 
 
 
